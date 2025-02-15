@@ -1,1 +1,0 @@
-ACTION=="add", ATTRS{idVendor}=="3171", ATTRS{idProduct}=="0060", RUN+="/sbin/modprobe i2c-tiny-usb" RUN+="/bin/sh -c 'echo 3171 0060 FF > /sys/bus/usb/drivers/i2c-tiny-usb/new_id'"
