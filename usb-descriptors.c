@@ -16,7 +16,7 @@
 #define DESC_STR_MAX 20
 
 #define USBD_VID 0x3171 /* 8086 Consultancy */
-#define USBD_PID 0x0061 /* USB Interfacer (UART+I2C) */
+#define USBD_PID 0x0061 /* RP2040 Interfacer (UART+I2C) */
 
 #define USBD_DESC_LEN (TUD_CONFIG_DESC_LEN + (TUD_VENDOR_DESC_LEN * CFG_TUD_VENDOR) + (TUD_CDC_DESC_LEN * CFG_TUD_CDC))
 #define USBD_MAX_POWER_MA 500
@@ -76,7 +76,7 @@ char serial[17];
 
 static char *const usbd_desc_str[] = {
 	[USBD_STR_MANUF] = "8086 Consultancy",
-	[USBD_STR_PRODUCT] = "USB Interfacer",
+	[USBD_STR_PRODUCT] = "RP2040 Interfacer",
 	[USBD_STR_SERIAL] = serial,
 	[USBD_STR_CDC] = "CDC Serial",
 	[USBD_STR_VENDOR] = "i2c-tiny-usb",

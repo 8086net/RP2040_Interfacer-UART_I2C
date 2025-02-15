@@ -1,12 +1,12 @@
-Raspberry Pi Pico USB-UART and I2C Bridge
+RP2040 Interfacer USB-UART and I2C Bridge
 =================================
-This project provides a UART and I2C interface on the 8086.net "USB Interfacer" board.
+This project provides a UART and I2C interface on the 8086.net "RP2040 Interfacer" board.
 
-Supporting hardware, the "USB Interfacer" is available on [Tindie](https://www.tindie.com/products/36879/).
+Supporting hardware, the "RP2040 Interfacer" is available on [Tindie](https://www.tindie.com/products/36879/).
 
 The USB UART is compatible with the builtin USB CDC class drivers in Linux, macOS, and >= Windows 10.
 
-The I2C interface requires an i2c-tiny-usb driver. On Linux copy the "90-USB_Interfacer.rules" file into "/etc/udev/rules.d/", run "sudo udevadm control --reload" and then unplug/replug the USB Interfacer. Running "i2cdetect -l" will then show the i2c-tiny-usb bus you need to use in your application.
+The I2C interface requires an i2c-tiny-usb driver. On Linux copy the "90-RP2040_Interfacer.rules" file into "/etc/udev/rules.d/", run "sudo udevadm control --reload" and then unplug/replug the RP2040 Interfacer. Running "i2cdetect -l" will then show the i2c-tiny-usb bus you need to use in your application.
 
 History
 ----------
@@ -20,10 +20,10 @@ Disclaimer
 
 This software is provided without warranty, according to the MIT License, and should therefore not be used where it may endanger life, financial stakes, or cause discomfort and inconvenience to others.
 
-USB Interfacer pinout
+RP2040 Interfacer pinout
 ------------------------
 
-| USB Interfacer | Function |
+| RP2040 Interfacer | Function |
 |:----------------------:|:--------:|
 | GPIO12          | UART0 TX |
 | GPIO13          | UART0 RX |
